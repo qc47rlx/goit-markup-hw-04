@@ -110,6 +110,8 @@ a {
   display: flex;
   align-items: flex-start;
   gap: 40px;
+  margin: 0;
+  padding: 0;
 }
 
 .header-menu-link {
@@ -120,6 +122,21 @@ a {
   letter-spacing: 0.02em;
   display: block;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-header {
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  width: 100%;
 }
 
 .header-menu-link:hover,
@@ -211,6 +228,7 @@ a {
 
 /* ====START FEATURES==== */
 .feature h3 {
+  max-width: 1440px;
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
@@ -311,6 +329,8 @@ a {
   border-bottom: 0;
   border-radius: 0px 0px 4px 4px;
   flex-basis: calc((100% - 72px) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-list-subtitle {
