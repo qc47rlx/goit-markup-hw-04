@@ -5,11 +5,6 @@
   box-sizing: border-box;
 }
 
-.header {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
   font-family: "Roboto", sans-serif;
@@ -115,12 +110,13 @@ a {
 }
 
 .header-menu-link {
-  color: #404bbf;
+  color: #2e2f42;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   display: block;
+  padding: 24px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -189,6 +185,7 @@ a {
   background-position: center;
   background-size: cover;
   padding: 188px 0;
+  margin: 0 auto;
 }
 
 .hero-title {
